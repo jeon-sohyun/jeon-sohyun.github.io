@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 980">
+  <rect width="700" height="980" fill="#18fff1"/>
+  <path d="M70 180h560v620H70zM160 270h380v440H160z" fill="none" stroke="#111" stroke-width="16"/>
+  <text x="48" y="74" fill="#111" font-family="Arial,sans-serif" font-size="25">HONGIK UNIVERSITY · 2024</text>
+  <text x="350" y="460" fill="#111" font-family="Arial,sans-serif" font-weight="700" font-size="72" text-anchor="middle">OPEN</text>
+  <text x="350" y="540" fill="#111" font-family="Arial,sans-serif" font-weight="700" font-size="72" text-anchor="middle">STUDIO</text>
+  <text x="48" y="930" fill="#111" font-family="Arial,sans-serif" font-size="20">COLLEGE OF FINE ARTS</text>
+</svg>

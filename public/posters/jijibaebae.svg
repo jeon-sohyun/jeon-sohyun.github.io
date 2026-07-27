@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 980">
+  <rect width="700" height="980" fill="#fffa18"/>
+  <g fill="#e60f09">
+    <circle cx="180" cy="300" r="115"/><circle cx="520" cy="300" r="115"/>
+    <circle cx="180" cy="670" r="115"/><circle cx="520" cy="670" r="115"/>
+  </g>
+  <text x="350" y="515" fill="#111" font-family="Arial,sans-serif" font-weight="700" font-size="84" text-anchor="middle">지지배배</text>
+  <text x="40" y="70" fill="#111" font-family="Arial,sans-serif" font-size="25">OHON GALLERY · 2025</text>
+  <text x="40" y="930" fill="#111" font-family="Arial,sans-serif" font-size="20">SEOUL, KOREA</text>
+</svg>
