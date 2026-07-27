@@ -84,7 +84,7 @@ figcaption { display: grid; grid-template-columns: 1fr auto; padding-top: 7px; f
 .footer-group div { display: flex; flex-direction: column; gap: 3px; font-size: clamp(1.05rem, 1.5vw, 1.5rem); }
 .footer-group a { width: fit-content; }
 .footer-group a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.work-footer > p { margin: 0 0 -.16em; width: 100%; font-size: 15.25vw; line-height: .76; letter-spacing: -.09em; font-weight: 500; white-space: nowrap; text-align: center; }
+.work-footer > p { margin: 0 0 -.16em; width: 100%; color: #e60f09; font-size: 15.25vw; line-height: .76; letter-spacing: -.09em; font-weight: 500; white-space: nowrap; text-align: center; }
 
 .about-page { min-height: 100vh; padding: 5vh 4.5vw 7vh; background: #18fff1; color: var(--ink); }
 @keyframes rise { from { opacity: 0; transform: translateY(70px); } }

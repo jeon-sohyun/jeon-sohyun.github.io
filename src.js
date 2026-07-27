@@ -234,16 +234,19 @@ function renderAbout() {
 
       <section class="cv-section" aria-labelledby="exhibitions-title">
         <h2 id="exhibitions-title">Group Exhibitions</h2>
-        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/seed-space.svg" data-title="正답은 定답일 뿐 症답을 뽑아">
+        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/seed-space.png" data-title="正답은 定답일 뿐 症답을 뽑아">
           <time>2024</time><span>《正답은 定답일 뿐 症답을 뽑아》, Seed Space Gallery, Seoul, Korea</span>
         </button>
-        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/open-studio.svg" data-title="Hongik University Open Studio">
+        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/open-studio-2024.jpg" data-title="Hongik University Open Studio">
           <time>2024</time><span>Hongik University Open Studio, Hongik University, Seoul, Korea</span>
         </button>
-        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/hertz.svg" data-title="2025 HCMY Hertz">
+        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/open-studio.jpg" data-title="Hongik University Open Studio">
+          <time>2025</time><span>Hongik University Open Studio, Hongik University, Seoul, Korea</span>
+        </button>
+        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/hcmy.jpg" data-title="2025 HCMY Hertz">
           <time>2025</time><span>2025 HCMY 《Hertz》, Hongik University, Seoul, Korea</span>
         </button>
-        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/jijibaebae.svg" data-title="지지배배">
+        <button class="cv-row exhibition-row" type="button" data-poster="./public/posters/jijibaebae.png" data-title="지지배배">
           <time>2025</time><span>《지지배배》, OhOn Gallery, Seoul, Korea</span>
         </button>
       </section>
