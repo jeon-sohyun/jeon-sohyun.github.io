@@ -1,5 +1,18 @@
 const projects = [
-  { id: 'chroma-form', title: 'Chroma Form', kind: 'Art Direction', material: 'Glass, aluminum, image', year: '2026', image: './public/images/chroma-form.png', position: 'center' },
+  {
+    id: 'leaning-against',
+    title: 'Leaning Against',
+    kind: 'Art Direction',
+    material: 'Photography, image',
+    year: '2026',
+    image: './images/leaning%20against_img1.JPG',
+    position: 'center',
+    gallery: [
+      './images/leaning%20against_img2.JPG',
+      './images/leaning%20against_img3.JPG',
+      './images/leaning%20against_img4.JPG'
+    ]
+  },
   { id: 'interval-type', title: 'Interval Type', kind: 'Identity · Exhibition', material: 'Fabric, ink, concrete', year: '2026', image: './public/images/interval-type.png', position: 'center' },
   { id: 'red-quiet', title: 'The Red Quiet', kind: 'Editorial · Campaign', material: 'Photography, print', year: '2025', image: './public/images/red-quiet.png', position: 'center' },
   { id: 'matter-study', title: 'Matter Study No. 02', kind: 'Objects · Research', material: 'Glass, steel, light', year: '2025', image: './public/images/chroma-form.png', position: '62% center' },
@@ -100,12 +113,18 @@ function renderProject(id) {
   const p = projects.find(item => item.id === id) || projects[0];
   const index = projects.indexOf(p);
   const next = projects[(index + 1) % projects.length];
-  const gallery = [
-    { image: p.image, position: p.position, className: 'wide' },
-    { image: projects[(index + 1) % projects.length].image, position: 'center', className: 'half' },
-    { image: p.image, position: index % 2 ? 'center 28%' : 'center 75%', className: 'half' },
-    { image: projects[(index + 2) % projects.length].image, position: 'center', className: 'wide' }
-  ];
+  const gallery = p.gallery
+    ? p.gallery.map((image, galleryIndex) => ({
+        image,
+        position: 'center',
+        className: 'wide contain'
+      }))
+    : [
+        { image: p.image, position: p.position, className: 'wide' },
+        { image: projects[(index + 1) % projects.length].image, position: 'center', className: 'half' },
+        { image: p.image, position: index % 2 ? 'center 28%' : 'center 75%', className: 'half' },
+        { image: projects[(index + 2) % projects.length].image, position: 'center', className: 'wide' }
+      ];
   app.innerHTML = shell(`
     <main id="content" class="detail-page project-enter">
       <div class="detail-heading">

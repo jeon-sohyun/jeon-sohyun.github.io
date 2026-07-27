@@ -46,10 +46,10 @@ body.landing-visible .scroll-cue { opacity: 0; pointer-events: none; }
 .intro p { margin: 0 0 16px; }
 .intro a { border-bottom: 1px solid; }
 .project-index { position: fixed; z-index: 10; left: 22px; top: 42%; transform: translateY(-50%); width: min(280px, 25vw); display: flex; flex-direction: column; line-height: 1.14; font-size: clamp(.83rem, 1.12vw, 1.1rem); transition: opacity .35s; }
-.project-link { color: var(--muted); transition: color .25s, transform .25s; width: fit-content; }
+.project-link { color: #18fff1; transition: color .25s, transform .25s; width: fit-content; }
 .project-link span { display: inline-block; width: 28px; font-size: .65em; vertical-align: .12em; }
-.project-link:hover { color: var(--ink); transform: translateX(5px); }
-.project-link.is-active { color: var(--ink); }
+.project-link:hover { color: #3d6865; transform: translateX(5px); }
+.project-link.is-active { color: #3d6865; }
 .scroll-cue { position: fixed; bottom: 18px; left: 22px; z-index: 10; text-transform: uppercase; font-size: .68rem; letter-spacing: .08em; }
 .scroll-cue span { display: inline-block; animation: bob 1.5s infinite; }
 @keyframes bob { 50% { transform: translateY(4px); } }
@@ -101,6 +101,7 @@ dt, dd { margin: 0; padding: 8px 0; border-bottom: 1px solid #aaa; }
 .project-gallery figure.wide { grid-column: 1 / -1; }
 .project-gallery img { height: 76vh; object-fit: cover; }
 .project-gallery .half img { height: 68vw; max-height: 980px; }
+.project-gallery .contain img { height: auto; max-height: none; object-fit: contain; }
 .next-project { border-top: 1px solid; padding: 15px 0; display: flex; justify-content: space-between; align-items: baseline; }
 .next-project strong { font: 400 clamp(2rem, 5vw, 6rem) "Libre Caslon Display", Georgia, serif; }
 
@@ -137,6 +138,7 @@ dt, dd { margin: 0; padding: 8px 0; border-bottom: 1px solid #aaa; }
   .project-gallery { grid-template-columns: 1fr; margin: 0 -14px 12vh; gap: 4px; }
   .project-gallery figure.wide { grid-column: auto; }
   .project-gallery img, .project-gallery .half img { height: 72vh; }
+  .project-gallery .contain img { height: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
